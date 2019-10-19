@@ -1,2 +1,5 @@
-# my_projects_tweaks
-A REDCap External Module allowing some tweaking of the My Projects page-
+# _My Projects_ Tweaks
+
+A REDCap External Module allowing some tweaking of the _My Projects_ page.
+
+**This is still in beta!**

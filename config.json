@@ -1,0 +1,70 @@
+{
+    "name": "My Projects Tweaks",
+    "namespace": "DE\\RUB\\MyProjectsTweaksExternalModule",
+    "description": "Offers some tweaks for the <i>My Projects</i> page.",
+    "documentation": "README.md",
+    "authors": [
+        {
+            "name": "Günther Rezniczek",
+            "email": "guenther.rezniczek@rub.de",
+            "institution": "Ruhr-Universität Bochum"
+        }
+    ],
+    "framework-version": 3,
+    "permissions": [
+        "redcap_every_page_top"
+    ],
+    "enable-every-page-hooks-on-system-pages": true,
+    "system-settings": [
+        {
+            "key": "debug_mode",
+            "name": "Debug mode (include JS tweaks as separate files)",
+            "type": "checkbox"
+        },
+        {
+            "key": "add_pid",
+            "name": "Add project <b>PID</b>s to the <i>My Projects</i> table as a new column",
+            "type": "checkbox"
+        },
+        {
+            "key": "suppress_description",
+            "name": "<b>Suppress</b> the very <i>annoying</i> description popups",
+            "type": "checkbox"
+        },
+        {
+            "key": "suppress_description_whitelist",
+            "name": "Suppress the description <b>only</b> for these users (one per line)",
+            "type": "textarea",
+            "branchingLogic": {
+                "field": "suppress_description",
+                "value": true
+            }
+        },
+        {
+            "key": "suppress_description_blacklist",
+            "name": "Do <b>not</b> suppress the description for these users (one per line)",
+            "type": "textarea",
+            "branchingLogic": {
+                "field": "suppress_description",
+                "value": true
+            }
+        },
+        {
+            "key": "replace_description",
+            "name": "<b>Replace</b> the annoying popups with much <i>friendlier</i> ones",
+            "type": "checkbox",
+            "branchingLogic": {
+                "field": "suppress_description",
+                "value": false
+            }
+        }
+    ],
+    "project-settings": [
+    ],
+    "compatibility": {
+        "php-version-min": "5.6.0",
+        "php-version-max": "",
+        "redcap-version-min": "8.1.0",
+        "redcap-version-max": ""
+     }
+}
