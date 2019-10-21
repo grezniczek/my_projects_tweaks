@@ -6,7 +6,8 @@ A REDCap External Module allowing some tweaking of the _My Projects_ page.
 
 ## Requirements
 
-REDCAP 8.1.0 or newer (tested with REDCap 9.3.6 on a system running PHP 7.0.33).
+REDCAP 8.11.6 or newer (EM Framework v2).  
+Tested with REDCap 9.3.6 on a system running PHP 7.0.33).
 
 ## Installation
 
