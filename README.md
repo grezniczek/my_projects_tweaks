@@ -2,6 +2,8 @@
 
 A REDCap External Module allowing some tweaking of the _My Projects_ page.
 
+View [this page](https://github.com/grezniczek/my_projects_tweaks) on GitHub. Please see the [changelog](https://github.com/grezniczek/my_projects_tweaks/blob/master/CHANGELOG.md) for a detailed version history.
+
 **Pull requests (against _master_) are welcome!**
 
 ## Requirements
