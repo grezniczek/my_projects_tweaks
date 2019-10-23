@@ -1,7 +1,7 @@
 {
     "name": "My Projects Tweaks",
     "namespace": "DE\\RUB\\MyProjectsTweaksExternalModule",
-    "description": "Offers some tweaks for the <i>My Projects</i> page.",
+    "description": "Offers some tweaks for the <i>My Projects</i> page. Please submit any issue on the module's <a href=\"https://github.com/grezniczek/my_projects_tweaks\" target=\"_blank\"><b>GitHub</b></a> page.",
     "documentation": "README.md",
     "authors": [
         {
