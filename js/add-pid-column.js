@@ -10,9 +10,9 @@ $(function() {
         var TDr = $(this).closest('td')
         var TDp = $('<td align="center"><div class="fc" style="width:52px; padding-left:10px;"><span><span class="pid-cnt-h">' + pid + '</span>' + pid + '</span></div></td>')
         $(TDp).attr('style', TDr.attr('style'))
-        TDr.before(TDp);
+        TDr.before(TDp)
     })
     // Fix column number in header rows.
     var cols = $('div.hDiv div table tbody tr th').length
-    $('td.fldrrwparent').attr('colspan', cols);
+    $('td.fldrrwparent').attr('colspan', cols)
 })
