@@ -23,6 +23,9 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         // Hide the action.
         echo "<style>body{display:none}</style>";
 
+        // Apply column header misalignment fix.
+        $this->includeScriptlet("fix-th-misalignment");
+
         // Add PID column.
         if ($this->settings->addPIDColumn) {
             $this->includeScriptlet("add-pid-column");

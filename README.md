@@ -27,6 +27,8 @@ A few **system settings** are available. There are no project-specific settings.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
 
+A fix for the misaligned column headers in the _My Projects_ table when folders are used is **always** active.
+
 ## Notes to developers
 
 - `package-lock.json` is an artifact of having enhanced tooling support in VS Code for JS files (via the `// @ts-check` directive - _highly recommended_).
