@@ -1,5 +1,13 @@
 ## _My Projects Tweaks_ &ndash; Change Log
 
+### v1.1.0 - Compatibility update and enhancement
+
+- Enhancement:
+  - The PIDs are now links to the Project's Settings page.
+
+- Update:
+  - REDCap 9.4.1 changed the tooltips on the my project page. This updated takes this into consideration.
+
 ### v1.0.2 - Enhancement
 
 - Enhancement:

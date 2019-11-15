@@ -23,7 +23,7 @@ Tested with REDCap 9.3.6 on a system running PHP 7.0.33).
 A few **system settings** are available. There are no project-specific settings.
 
 - **Debug mode**: Check to have JavaScript snippets included as separate files. This may be useful for debugging in the browser developer tools.
-- **Add project PIDs**: Adds a new _PID_ column (in between _Project Title_ and _Records_).
+- **Add project PIDs**: Adds a new _PID_ column (in between _Project Title_ and _Records_). The PIDs are links that lead to the _Project's Settings_ page.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
 
