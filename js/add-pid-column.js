@@ -10,9 +10,10 @@ $(function() {
     // Rows.
     $('[class^="pid-cntr-"]').each(function() {
         const pid = this.className.split('-').reverse()[0]
-        const link = baselink + pid
+        const link = super_user ? ' href="' + baselink + pid + '"' : ''
+        const tag = super_user ? 'a' : 'span'
         const TDr = $(this).closest('td')
-        var TDp = $('<td align="center"><div class="fc" style="width:52px; padding-left:10px;"><a href="' + link + '"><span class="pid-cnt-h">' + pid + '</span>' + pid + '</a></div></td>')
+        var TDp = $('<td align="center"><div class="fc" style="width:52px; padding-left:10px;"><' + tag + link + '><span class="pid-cnt-h">' + pid + '</span>' + pid + '</' + tag +'></div></td>')
         $(TDp).attr('style', TDr.attr('style'))
         TDr.before(TDp)
     })
