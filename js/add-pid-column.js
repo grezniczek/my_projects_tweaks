@@ -1,5 +1,5 @@
 // @ts-check
-$(function() {
+if (typeof $ != 'undefined') $(function() {
     // Construct base link to project settings.
     const version = $('#footer a[href="https://projectredcap.org"]').text().split(' ')[1]
     const baselink = location.href.split('index.php?')[0] + 'redcap_v' + version + '/ControlCenter/edit_project.php?project='

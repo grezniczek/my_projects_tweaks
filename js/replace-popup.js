@@ -1,5 +1,5 @@
 // @ts-check
-$(function() {
+if (typeof $ != 'undefined') $(function() {
     // REDCap < 9.4.1
     if ($('div.projtitle.pnp').length) {
         $('div.projtitle.pnp').each(function() {

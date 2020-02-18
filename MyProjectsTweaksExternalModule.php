@@ -8,11 +8,6 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
 
     private $settings; 
 
-    function __construct() {
-        parent::__construct();
-
-    }
-
     function redcap_every_page_top($project_id = null) {
 
         // Are we on the My Projects page? If not .. bye bye.
@@ -50,7 +45,19 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         }
 
         // Reveal the results.
-        echo "<script>$(function() { $('body').show() })</script>";
+        echo "<script>
+            (function() {
+                var callback = function() {
+                    document.body.style.display = 'block'
+                }
+                if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
+                    callback()
+                }
+                else {
+                    document.addEventListener('DOMContentLoaded', callback)
+                }
+            })()
+        </script>";
     }
 
     private function includeScriptlet($name) {
