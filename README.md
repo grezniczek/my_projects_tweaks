@@ -9,7 +9,7 @@ View [this page](https://github.com/grezniczek/my_projects_tweaks) on GitHub.
 ## Requirements
 
 REDCAP 8.11.6 or newer (EM Framework v2).  
-Tested with REDCap 9.3.6 on a system running PHP 7.0.33).
+Tested with REDCap 9.7.3 on a system running PHP 7.3).
 
 ## Installation
 
@@ -24,6 +24,8 @@ A few **system settings** are available. There are no project-specific settings.
 
 - **Debug mode**: Check to have JavaScript snippets included as separate files. This may be useful for debugging in the browser developer tools.
 - **Add project PIDs**: Adds a new _PID_ column (in between _Project Title_ and _Records_). For super users, the PIDs are links that lead to the _Project's Settings_ page.
+- **Link to Online Designer**: Adds links to the Online Designer page of projects in the _Fields_ column (for admins only).
+- **Link to Record Status Dashboard**: Add links to the Record Status Dashboard in the _Records_ column.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
 
@@ -37,7 +39,7 @@ A fix for the misaligned column headers in the _My Projects_ table when folders 
 
 Version | Updates
 ------- | ----
-v1.2.0  | _New feature:_ Persistence of project filter.
+v1.2.0  | _New features:_ Persistence of project filter, links from to the Record Status Dashboard (_Records_ column), and to the Online Designer (_Fields_ column; admins only).
 v1.1.1  | _Bug fix:_ When jQuery was missing, the module might cause blank pages.
 v1.1.0  | _Enhancement:_ For super users, the PIDs are now links to the Project's Settings page.<br>_Update:_ REDCap 9.4.1 changed the tooltips on the my project page. This updated takes this into consideration.
 v1.0.2  | _Enhancement:_ The misalignment of headers in the _My Projects_ table, which is present in vanilla REDCap when folders are used, gets fixed by this update. This effect is always on as long as this module is enabled.
