@@ -60,12 +60,12 @@
         },
         {
             "key": "add_fieldlink",
-            "name": "Add an <b>Online Designer</b> link to field counts (admins only)",
+            "name": "Link to <b>Online Designer</b> from field counts (admins only)",
             "type": "checkbox"
         },
         {
             "key": "add_recordlink",
-            "name": "Add a <b>Record Status Dashboard</b> link to record counts",
+            "name": "Link to <b>Record Status Dashboard</b> from record counts",
             "type": "checkbox"
         },
         {
