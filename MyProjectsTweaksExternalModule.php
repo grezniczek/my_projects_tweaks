@@ -44,6 +44,14 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
             $this->includeScriptlet("replace-popup");
         }
 
+        // Persist "Filter projects by title".
+        if ($this->settings->filterPersist) {
+            if (!$this->settings->replaceDescription) {
+                $this->includeCSS("tooltip");
+            }
+            $this->includeScriptlet("filter-persist");
+        }
+
         // Reveal the results.
         echo "<script>
             (function() {
@@ -101,6 +109,7 @@ class MyProjectsTweaksSettings {
     public $suppressDescriptionWhitelist = array();
     public $suppressDescriptionBlacklist = array();
     public $replaceDescription = false;
+    public $filterPersist = false;
 
     function __construct($module) 
     {
@@ -127,6 +136,7 @@ class MyProjectsTweaksSettings {
             $this->suppressDescriptionBlacklist = $process($blacklist);
         }
         $this->replaceDescription = $this->getSS("replace_description", false);
+        $this->filterPersist = $this->getSS("enable_filterpersist", false);
 
         // Settings in the context of a project.
         if ($this->isProject) {

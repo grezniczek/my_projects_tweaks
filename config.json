@@ -57,6 +57,11 @@
                 "field": "suppress_description",
                 "value": false
             }
+        },
+        {
+            "key": "enable_filterpersist",
+            "name": "Enable <b>persistence of project filter</b>",
+            "type": "checkbox"
         }
     ],
     "project-settings": [

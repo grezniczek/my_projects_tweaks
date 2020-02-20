@@ -37,6 +37,7 @@ A fix for the misaligned column headers in the _My Projects_ table when folders 
 
 Version | Updates
 ------- | ----
+v1.2.0  | _New feature:_ Persistence of project filter.
 v1.1.1  | _Bug fix:_ When jQuery was missing, the module might cause blank pages.
 v1.1.0  | _Enhancement:_ For super users, the PIDs are now links to the Project's Settings page.<br>_Update:_ REDCap 9.4.1 changed the tooltips on the my project page. This updated takes this into consideration.
 v1.0.2  | _Enhancement:_ The misalignment of headers in the _My Projects_ table, which is present in vanilla REDCap when folders are used, gets fixed by this update. This effect is always on as long as this module is enabled.
