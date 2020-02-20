@@ -14,9 +14,9 @@ if (typeof $ != 'undefined') $(function() {
     }
     else {
         $('i[data-toggle=popover]').each(function() {
-            const $i = $(this)
-            const $old = $i.parent('span.aGridsub')
-            const text = $i.attr('data-content')
+            var $i = $(this)
+            var $old = $i.parent('span.aGridsub')
+            var text = $i.attr('data-content')
             $old.replaceWith('<span class="tooltip"><i class="far fa-sticky-note fs11" style="color:#000088;"></i><span class="tooltiptext">' + text + '</span></span>')
             $old.remove()
         })
