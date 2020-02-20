@@ -25,6 +25,11 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         if ($this->settings->addPIDColumn) {
             $this->includeScriptlet("add-pid-column");
         }
+
+        // Add Online Designer link to fields column.
+        if ($this->settings->addFieldLink && SUPER_USER) {
+            $this->includeScriptlet("add-field-link");
+        }
         
         // Suppress project description popup.
         if ($this->settings->suppressDescription) {
@@ -110,6 +115,7 @@ class MyProjectsTweaksSettings {
     public $suppressDescriptionBlacklist = array();
     public $replaceDescription = false;
     public $filterPersist = false;
+    public $addFieldLink = false;
 
     function __construct($module) 
     {
@@ -136,6 +142,7 @@ class MyProjectsTweaksSettings {
             $this->suppressDescriptionBlacklist = $process($blacklist);
         }
         $this->replaceDescription = $this->getSS("replace_description", false);
+        $this->addFieldLink = $this->getSS("add_fieldlink", false);
         $this->filterPersist = $this->getSS("enable_filterpersist", false);
 
         // Settings in the context of a project.

@@ -59,6 +59,11 @@
             }
         },
         {
+            "key": "add_fieldlink",
+            "name": "Add an <b>Online Designer</b> link to field counts (admins only)",
+            "type": "checkbox"
+        },
+        {
             "key": "enable_filterpersist",
             "name": "Enable <b>persistence of project filter</b>",
             "type": "checkbox"
