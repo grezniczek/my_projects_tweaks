@@ -31,6 +31,11 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
             $this->includeScriptlet("add-field-link");
         }
         
+        // Add Record Status Dashboard link to records column.
+        if ($this->settings->addRecordLink && SUPER_USER) {
+            $this->includeScriptlet("add-record-link");
+        }
+        
         // Suppress project description popup.
         if ($this->settings->suppressDescription) {
             $include = true;
@@ -116,6 +121,7 @@ class MyProjectsTweaksSettings {
     public $replaceDescription = false;
     public $filterPersist = false;
     public $addFieldLink = false;
+    public $addRecordLink = false;
 
     function __construct($module) 
     {
@@ -143,6 +149,7 @@ class MyProjectsTweaksSettings {
         }
         $this->replaceDescription = $this->getSS("replace_description", false);
         $this->addFieldLink = $this->getSS("add_fieldlink", false);
+        $this->addRecordLink = $this->getSS("add_recordlink", false);
         $this->filterPersist = $this->getSS("enable_filterpersist", false);
 
         // Settings in the context of a project.

@@ -64,6 +64,11 @@
             "type": "checkbox"
         },
         {
+            "key": "add_recordlink",
+            "name": "Add a <b>Record Status Dashboard</b> link to record counts",
+            "type": "checkbox"
+        },
+        {
             "key": "enable_filterpersist",
             "name": "Enable <b>persistence of project filter</b>",
             "type": "checkbox"
