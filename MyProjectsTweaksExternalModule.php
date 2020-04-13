@@ -32,7 +32,7 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         }
         
         // Add Record Status Dashboard link to records column.
-        if ($this->settings->addRecordLink && SUPER_USER) {
+        if ($this->settings->addRecordLink) {
             $this->includeScriptlet("add-record-link");
         }
         
