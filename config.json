@@ -70,7 +70,7 @@
         },
         {
             "key": "enable_filterpersist",
-            "name": "Enable <b>persistence of project filter</b>",
+            "name": "Enable <b>project filter persistence</b>",
             "type": "checkbox"
         }
     ],
