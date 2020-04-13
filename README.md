@@ -43,7 +43,7 @@ Instructions for testing the module can be found [here](?prefix=my_projects_twea
 
 Version | Updates
 ------- | ----------
-1.2.1   | _Bug fix:_ Set tooltip icon z-index.<br>_Misc:_ Add instructions for testing the module.
+1.2.1   | _Bug fixes:_ Set tooltip icon z-index; enable Record Status Dashboard links for all users.<br>_Misc:_ Add instructions for testing the module.
 1.2.0   | _New features:_ Persistence of project filter, links to the Record Status Dashboard (_Records_ column), and to the Online Designer (_Fields_ column; admins only).
 1.1.1   | _Bug fix:_ When jQuery was missing, the module might cause blank pages.
 1.1.0   | _Enhancement:_ For super users, the PIDs are now links to the Project's Settings page.<br>_Update:_ REDCap 9.4.1 changed the tooltips on the my project page. This updated takes this into consideration.
