@@ -65,14 +65,14 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         // Reveal the results.
         echo "<script>
             (function() {
-                var callback = function() {
+                function reveal() {
                     document.body.style.display = 'block'
                 }
                 if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
-                    callback()
+                    reveal()
                 }
                 else {
-                    document.addEventListener('DOMContentLoaded', callback)
+                    document.addEventListener('DOMContentLoaded', reveal)
                 }
             })()
         </script>";
