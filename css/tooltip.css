@@ -3,6 +3,7 @@
     float: right;
     opacity: 1;
     margin-top: -5px;
+    z-index: 50;
 }
 
 .tooltip .tooltiptext {
