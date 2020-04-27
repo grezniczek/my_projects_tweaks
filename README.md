@@ -29,6 +29,7 @@ A few **system settings** are available. There are no project-specific settings.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
 - **Collapse All**: Adds a _Collapse All_ button next to the _Organize_ button that collapses all project folders.
+- **_Organize Projects_ filtering**: Add a filter to the _Organize Projects_ modal
 
 A fix for the misaligned column headers in the _My Projects_ table when folders are used is **always** active.
 
@@ -44,6 +45,7 @@ Instructions for testing the module can be found [here](?prefix=my_projects_twea
 
 Version | Updates
 ------- | ----------
+1.4.0   | _New feature:_ Add a filter to the project list in the _Organize Projects_ modal.
 1.3.1   | _Bug fix:_ Fix collapse all.
 1.3.0   | _New feature:_ Add a collapse all button that collapses all project folders.
 1.2.1   | _Bug fixes:_ Set tooltip icon z-index; enable Record Status Dashboard links for all users.<br>_Misc:_ Add instructions for testing the module.

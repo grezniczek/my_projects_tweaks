@@ -77,6 +77,11 @@
             "key": "add_collapseall",
             "name": "Add a <b>Collapse All</b> button",
             "type": "checkbox"
+        },
+        {
+            "key": "add_organizefilter",
+            "name": "Add a <b>Filter</b> to the <i>Organize Projects</i> modal",
+            "type": "checkbox"
         }
     ],
     "project-settings": [
