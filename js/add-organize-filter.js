@@ -11,9 +11,9 @@ if (typeof $ != 'undefined') $(function() {
             var $tr = $('#select_folders').parent().parent()
             var $tbody = $tr.parent()
             $('#hide_assigned').parent().remove()
-            var $new_tr = $('<tr><td style="padding-top:7px;"><input id="hide_assigned" onclick="hideAssigned();" type="checkbox"><span style="font-size:11px; color:#000;font-weight:normal;">Hide projects already assigned</span></td><td></td></tr>')
+            var $new_tr = $('<tr><td style="padding-top:7px;"><input id="hide_assigned" onclick="hideAssigned();" type="checkbox"><span style="font-size:11px;color:#000;font-weight:normal;">Hide projects already assigned</span></td><td></td></tr>')
             $tbody.append($new_tr)
-            var $td = $('<td><input data-my-project-tweaks="organize-filter" type="text" class="x-form-text x-form-field" placeholder="Filter projects" style="margin-top:8px;max-width:200px;"> <button style="margin-top: 6px;" class="btn btn-defaultrc btn-xs">&times;</button></td>')
+            var $td = $('<td><input data-my-project-tweaks="organize-filter" type="text" class="x-form-text x-form-field" placeholder="Filter projects" style="margin-top:8px;max-width:200px;"> <button style="margin-top:6px;" class="btn btn-defaultrc btn-xs">&times;</button></td>')
             $tr.append($td)
             $filter = $td.find('input')
             $td.find('button').on('click', function() {
@@ -39,7 +39,7 @@ if (typeof $ != 'undefined') $(function() {
                 if (e.target.innerHTML.length > 0) {
                     applyFilter()
                 }
-            });
+            })
         }
     }
 })
