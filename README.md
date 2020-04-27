@@ -28,6 +28,7 @@ A few **system settings** are available. There are no project-specific settings.
 - **Link to Record Status Dashboard**: Add links to the Record Status Dashboard in the _Records_ column.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
+- **Collapse All**: Adds a _Collapse All_ button next to the _Organize_ button that collapses all project folders.
 
 A fix for the misaligned column headers in the _My Projects_ table when folders are used is **always** active.
 
