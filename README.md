@@ -44,6 +44,7 @@ Instructions for testing the module can be found [here](?prefix=my_projects_twea
 
 Version | Updates
 ------- | ----------
+1.3.1   | _Bug fix:_ Fix collapse all.
 1.3.0   | _New feature:_ Add a collapse all button that collapses all project folders.
 1.2.1   | _Bug fixes:_ Set tooltip icon z-index; enable Record Status Dashboard links for all users.<br>_Misc:_ Add instructions for testing the module.
 1.2.0   | _New features:_ Persistence of project filter, links to the Record Status Dashboard (_Records_ column), and to the Online Designer (_Fields_ column; admins only).
