@@ -72,6 +72,11 @@
             "key": "enable_filterpersist",
             "name": "Enable <b>project filter persistence</b>",
             "type": "checkbox"
+        },
+        {
+            "key": "add_collapseall",
+            "name": "Add a <b>Collapse All</b> button",
+            "type": "checkbox"
         }
     ],
     "project-settings": [

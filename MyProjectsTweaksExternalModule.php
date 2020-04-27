@@ -62,6 +62,11 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
             $this->includeScriptlet("filter-persist");
         }
 
+        // Add "Collapse All" button.
+        if ($this->settings->addCollapseAll) {
+            $this->includeScriptlet("add-collapse-all");
+        }
+
         // Reveal the results.
         echo "<script>
             (function() {
@@ -122,6 +127,7 @@ class MyProjectsTweaksSettings {
     public $filterPersist = false;
     public $addFieldLink = false;
     public $addRecordLink = false;
+    public $addCollapseAll = false;
 
     function __construct($module) 
     {
@@ -151,6 +157,7 @@ class MyProjectsTweaksSettings {
         $this->addFieldLink = $this->getSS("add_fieldlink", false);
         $this->addRecordLink = $this->getSS("add_recordlink", false);
         $this->filterPersist = $this->getSS("enable_filterpersist", false);
+        $this->addCollapseAll = $this->getSS("add_collapseall", false);
 
         // Settings in the context of a project.
         if ($this->isProject) {

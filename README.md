@@ -2,7 +2,7 @@
 
 A REDCap External Module allowing some tweaking of the _My Projects_ page.
 
-View [this page](https://github.com/grezniczek/my_projects_tweaks) on GitHub. 
+View [this page](https://github.com/grezniczek/my_projects_tweaks) on GitHub.
 
 **Pull requests (against _master_) are welcome!**
 
@@ -43,6 +43,7 @@ Instructions for testing the module can be found [here](?prefix=my_projects_twea
 
 Version | Updates
 ------- | ----------
+1.3.0   | _New feature:_ Add a collapse all button that collapses all project folders.
 1.2.1   | _Bug fixes:_ Set tooltip icon z-index; enable Record Status Dashboard links for all users.<br>_Misc:_ Add instructions for testing the module.
 1.2.0   | _New features:_ Persistence of project filter, links to the Record Status Dashboard (_Records_ column), and to the Online Designer (_Fields_ column; admins only).
 1.1.1   | _Bug fix:_ When jQuery was missing, the module might cause blank pages.
