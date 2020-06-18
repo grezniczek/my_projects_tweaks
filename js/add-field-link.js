@@ -1,7 +1,7 @@
 // @ts-check
 if (typeof $ != 'undefined') $(function() {
     // Construct base link to project settings.
-    var baselink = window['app_path_webroot'] + 'Design/online_designer.php?pid='
+    var baselink = window['app_path_webroot'] + 'Design/data_dictionary_codebook.php?pid='
     // Rows.
     $('[class^="pid-cntf-"]').each(function() {
         var pid = this.className.split('-').reverse()[0]

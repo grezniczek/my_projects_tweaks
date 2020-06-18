@@ -27,7 +27,7 @@ class MyProjectsTweaksExternalModule extends AbstractExternalModule {
         }
 
         // Add Online Designer link to fields column.
-        if ($this->settings->addFieldLink && SUPER_USER) {
+        if ($this->settings->addFieldLink) {
             $this->includeScriptlet("add-field-link");
         }
         

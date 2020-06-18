@@ -2,14 +2,9 @@
 
 A REDCap External Module allowing some tweaking of the _My Projects_ page.
 
-View [this page](https://github.com/grezniczek/my_projects_tweaks) on GitHub.
-
-**Pull requests (against _master_) are welcome!**
-
 ## Requirements
 
-REDCAP 8.11.6 or newer (EM Framework v2).  
-Tested with REDCap 9.7.3 on a system running PHP 7.3).
+REDCAP 8.11.6 up to 10.0.1. REDCap **10.0.2** and newer had the features of this module integrated.
 
 ## Installation
 
@@ -23,8 +18,9 @@ Tested with REDCap 9.7.3 on a system running PHP 7.3).
 A few **system settings** are available. There are no project-specific settings.
 
 - **Debug mode**: Check to have JavaScript snippets included as separate files. This may be useful for debugging in the browser developer tools.
+- **Filter persistence**: Persists the project filter value (via a cookie). This can be turned on and off by the users.
 - **Add project PIDs**: Adds a new _PID_ column (in between _Project Title_ and _Records_). For super users, the PIDs are links that lead to the _Project's Settings_ page.
-- **Link to Online Designer**: Adds links to the Online Designer page of projects in the _Fields_ column (for admins only).
+- **Link to Codebook**: Adds Codebook links to the _Fields_ column for all users.
 - **Link to Record Status Dashboard**: Add links to the Record Status Dashboard in the _Records_ column.
 - **Suppress description popups**: Does just that. This can be finetuned by limitiing the effect to certain users only (whitelist) or to exclude certain users from the benefits of this effect (blacklist).
 - **Replace description popups**: When activated, the popups remain, but only trigger when the mouse hovers over the icons (which are now right-aligend). The popups also don't flicker and when clicked with the mouse, the corresponding project will be loaded. You don't like the colors? --> Submit a pull request that makes this configurable ;)
@@ -32,10 +28,6 @@ A few **system settings** are available. There are no project-specific settings.
 - **_Organize Projects_ filtering**: Add a filter to the _Organize Projects_ modal
 
 A fix for the misaligned column headers in the _My Projects_ table when folders are used is **always** active.
-
-## Notes to developers
-
-- `package-lock.json` is an artifact of having enhanced tooling support in VS Code for JS files (via the `// @ts-check` directive - _highly recommended_).
 
 ## Testing
 
@@ -45,6 +37,7 @@ Instructions for testing the module can be found [here](?prefix=my_projects_twea
 
 Version | Updates
 ------- | ----------
+1.4.1   | _Change:_ Instead of linking to the Online Designer, which leads to Access Denied pages for most users, the _Fields_ column now links to the Codebook. This is for all users.
 1.4.0   | _New feature:_ Add a filter to the project list in the _Organize Projects_ modal.
 1.3.1   | _Bug fix:_ Fix collapse all.
 1.3.0   | _New feature:_ Add a collapse all button that collapses all project folders.

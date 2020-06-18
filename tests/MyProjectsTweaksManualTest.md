@@ -17,7 +17,7 @@ Version 1 - 2020-04-13
    - A _PID_ column is shown before the _Records_ column.
    - Clicking on project id links in the _PID_ column takes you to the corresponding _Edit a Project's Settings_ page.
    - The numbers in the _Records_ column are links that take you to the corresponding _Record Status Dashboard_ page.
-   - The numbers in the _Fields_ column are links that take you to the corresponding _Online Designer_ page.
+   - The numbers in the _Fields_ column are links that take you to the corresponding _Codebook_ page.
    - None of the projects in the list have the description icon.
    - There is a project filter icon (with a tooltip: 'Toggle filter persistence') before the _Filter projects by title_ text box that can be toggled between an on and off state.
    - There is a clear icon (x) after the _Filter projects by title_ text box.
